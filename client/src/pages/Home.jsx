@@ -47,6 +47,7 @@ const Home = () => {
   useEffect(() => {
     fetchPosts();
   }, []);
+  
 
   const handleSearchChange = (e) => {
     clearTimeout(searchTimeout);

@@ -14,6 +14,7 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
+
 router.route('/').get(async (req, res) => {
   try {
     const posts = await Post.find({});
